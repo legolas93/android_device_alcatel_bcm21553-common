@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     device/alcatel/bcm21553-common/prebuilt/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt \
 
 # HGL
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     device/alcatel/bcm21553-common/prebuilt/lib/egl/libGLES_hgl.so:system/lib/egl/libGLES_hgl.so \
 
 # Gralloc
