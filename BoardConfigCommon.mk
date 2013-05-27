@@ -40,7 +40,7 @@ USE_CAMERA_STUB := true
 BOARD_USE_JPEG := true
 
 # 3D
-BOARD_EGL_CFG := device/samsung/bcm21553-common/prebuilt/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/alcatel/bcm21553-common/prebuilt/lib/egl/egl.cfg
 BOARD_USES_HGL := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 USE_OPENGL_RENDER := true
