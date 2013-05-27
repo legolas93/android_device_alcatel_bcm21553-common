@@ -63,29 +63,16 @@ PRODUCT_COPY_FILES += \
     device/alcatel/bcm21553-common/prebuilt/lib/libnetutils.so:system/lib/libnetutils.so \
     device/alcatel/bcm21553-common/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     device/alcatel/bcm21553-common/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-#    device/alcatel/bcm21553-common/prebuilt/bin/get_macaddrs:system/bin/get_macaddrs \
     device/alcatel/bcm21553-common/prebuilt/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     device/alcatel/bcm21553-common/prebuilt/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt \
+
+# Gralloc
+PRODUCT_COPY_FILES += \
+    device/alcatel/bcm21553-common/prebuilt/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so 
 
 # HGL
 PRODUCT_COPY_FILES += \
     device/alcatel/bcm21553-common/prebuilt/lib/egl/libGLES_hgl.so:system/lib/egl/libGLES_hgl.so \
-
-# Gralloc
-#PRODUCT_COPY_FILES += \
-#	device/alcatel/bcm21553-common/prebuilt/lib/hw/gralloc.bcm21553.so:system/lib/hw/gralloc.default.so 
-
-# Enable if you build open Gralloc, then disable the prebuilt gralloc
-#PRODUCT_PACKAGES += \
-#    	gralloc.bcm21553
-
-# Media scanner apps
-#PRODUCT_COPY_FILES += \
-#    	device/alcatel/bcm21553-common/prebuilt/app/MediaPlayer.apk:system/app/MediaPlayer.apk \
-
-#Media Scanner libs
-#PRODUCT_COPY_FILES += \
-#	device/alcatel/bcm21553-common/prebuilt/lib/libandless.so:system/lib/libandless.so \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=eth0 \
@@ -98,6 +85,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.com.google.networklocation=1
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=131072
 
 # Note for the kernel:
 #    * This kernel is not compatible with your device, it's just for build the ROM
