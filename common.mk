@@ -60,10 +60,6 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_COPY_FILES += \
     device/alcatel/bcm21553-common/prebuilt/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
-    device/alcatel/bcm21553-common/prebuilt/lib/libnetutils.so:system/lib/libnetutils.so \
-    device/alcatel/bcm21553-common/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-    device/alcatel/bcm21553-common/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/alcatel/bcm21553-common/prebuilt/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt \
 
 # Gralloc
 PRODUCT_COPY_FILES += \
